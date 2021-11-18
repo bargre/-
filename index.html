@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>그랩마켓</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+
+  <body>
+    <div id="header">
+    <div id="header-area">
+      <img src="images/icons/logo.png" alt="그랩마켓 로고">
+    </div>
+    </div>
+    <div id="body">
+      <div id="banner">
+        <img src="images/banners/banner1.png" alt="">
+      </div>
+      <h1>판매되는 상품들</h1>
+      <div id="product-list">
+      </div>
+    </div>
+    <div id="footer">
+
+    </div>
+  </body>
+  <script>
+    var products = [{
+      name : '농구공',
+      price : '100,000',
+      seller : '조던',
+      imageUrl : 'images/products/basketball3.jpg'
+    },{
+      name : '축구공',
+      price : '50,000',
+      seller : '메시',
+      imageUrl : 'images/products/notebook2.jpg'
+    },{
+      name : '키보드',
+      price : '10,000',
+      seller : '그랩',
+      imageUrl : 'images/products/keyboard1.jpg'
+    }];
+
+    let productsHtml ='';
+     for(var i = 0; i < products.length; i++){
+       var product = products[i]
+      productsHtml = productsHtml +
+      '<div class="product-card">'+
+     ' <img class="product-img" src="' +product.imageUrl+ '" />'+
+     ' <div class="product-contents">'+
+        ' <span class="product-name">'+product.name+'</span>'+
+        ' <span class="product-price">'+product.price+'원'+'</span>'+
+        '<div class="product-seller">'+
+           ' <img class="product-avatar" src=" images/icons/avatar.png">'+
+           ' <span>'+product.seller+'</span>'+
+           ' </div>'+
+        '</div>'+
+     '</div>';
+    }
+
+    document.querySelector('#product-list').innerHTML = productsHtml;
+
+  </script>
+</html>
