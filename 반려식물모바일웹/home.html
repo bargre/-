@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <title>My Plant-나만의 반려식물 키우기</title>
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/master.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+  </head>
+
+  <body>
+
+    <header class="header">
+      <h2>홈</h2>
+      <div class="header_icon_area">
+        <span class="lnr lnr-magnifier"></span>
+        <span class="lnr lnr-alarm"></span>
+        <span class="lnr lnr-cog"></span>
+      </div>
+    </header>
+    <main class="content">
+        <section class="my">
+          <div class="wrap">
+            <h3>나의 반려식물</h3>
+          </div>
+              <div class="swiper-container">
+                <ul class="swiper-wrapper">
+
+                    <li class="swiper-slide my_box">
+                      <div class="my_mask_box">
+                        <img src="images/01.jpg" alt="라벤더">
+                      </div>
+                      <div class="my_text_box">
+                        <div class="my_tit">
+                          <small class="pd_b_5">D&#43;126</small>
+                          <h4>라벤더</h4>
+                        </div>
+                        <span class="my_info">분갈이 1회</span>
+                      </div>
+                    </li>
+
+                    <li class="swiper-slide my_box">
+                      <div class="my_mask_box">
+                        <img src="images/02.jpg" alt="라벤더">
+                      </div>
+                      <div class="my_text_box">
+                        <div class="my_tit">
+                          <small class="pd_b_5">D&#43;126</small>
+                          <h4>라벤더</h4>
+                        </div>
+                        <span class="my_info">분갈이 1회</span>
+                      </div>
+                    </li>
+
+                    <li class="swiper-slide my_box">
+                      <div class="my_mask_box">
+                        <img src="images/03.jpg" alt="라벤더">
+                      </div>
+                      <div class="my_text_box">
+                        <div class="my_tit">
+                          <small class="pd_b_5">D&#43;126</small>
+                          <h4>라벤더</h4>
+                        </div>
+                        <span class="my_info">분갈이 1회</span>
+                      </div>
+                    </li>
+
+                    <li class="swiper-slide my_box">
+                      <div class="my_mask_box">
+                        <img src="images/04.jpg" alt="라벤더">
+                      </div>
+                      <div class="my_text_box">
+                        <div class="my_tit">
+                          <small class="pd_b_5">D&#43;126</small>
+                          <h4>라벤더</h4>
+                        </div>
+                        <span class="my_info">분갈이 1회</span>
+                      </div>
+                    </li>
+
+                    <li class="swiper-slide my_box">
+                      <div class="my_mask_box">
+                        <img src="images/05.jpg" alt="라벤더">
+                      </div>
+                      <div class="my_text_box">
+                        <div class="my_tit">
+                          <small class="pd_b_5">D&#43;126</small>
+                          <h4>라벤더</h4>
+                        </div>
+                        <span class="my_info">분갈이 1회</span>
+                      </div>
+                    </li>
+                </ul>
+            </div>
+          </section>
+
+          <section class="new">
+            <div class="wrap">
+              <h3>새로운 식물</h3>
+              <ul class="new_area">
+                <li>
+                  <div class="new_box cl">
+                    <div class="new_img_box">
+                      <img src="images/04.jpg" alt="식물이름">
+                    </div>
+                    <div class="new_text_box">
+                       <h4>몬트테라 90cm</h4>
+                       <p>빈티지그레이 우드스탠드 화분 빈티지그레이 우드스탠드 화분빈티지그레이 우드스탠드 화분</p>
+                       <p class="price">105,000원</p>
+                    </div>
+                  </div>
+                  <div class="new_icon">
+                    <span class="lnr lnr-cart"></span>
+                    <span class="lnr lnr-heart"></span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+        </section>
+    </main>
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        spaceBetween: 30,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>
