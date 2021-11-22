@@ -3,7 +3,8 @@
 
 /* 아이콘폰트 */
 .lnr {color:var(--main-color); font-size:20px; font-weight: bold; cursor: pointer;}
-section {margin-bottom:35px;}
+.lnr:hover{ color:#0a1348;}
+section {}
 
 /* my------------------ */
 
@@ -32,15 +33,14 @@ section {margin-bottom:35px;}
 
 .new_area li {
   position: relative;
-  height: 140px;
+  display: inline-block;
+  padding-bottom:10px;
 }
 .new_box {
-
   background: #fff;
   padding:10px;
   box-sizing: border-box;
   border-radius: 15px;
-  height: 100%;
 }
 
 .new_box > div {
@@ -49,7 +49,6 @@ section {margin-bottom:35px;}
 
 .new_img_box {
   width:30%;
-  max-height: 120px;
   border-radius: 15px;
   overflow: hidden;
 }
@@ -60,30 +59,33 @@ section {margin-bottom:35px;}
   padding-top:10px;
 }
 
-.new_text_box h4 {
-  padding: 5px 0;
+.new_text_box h4.name-title {
+  padding-bottom:2vw;
+  font-size: 4.3vw;
 }
 
 .new_text_box p {
   text-overflow: ellipsis;
   display:-webkit-box;
-   -webkit-line-clamp:3; /* 라인수 */
+   -webkit-line-clamp:3;
    -webkit-box-orient:vertical;
   overflow: hidden;
-
-
+    line-height: 1.3;
+    font-size: 4vw;
 }
-.price {
-  font-size: 18px;
+
+.new_text_box p.price {
   font-weight: 700;
-  line-height: 1.7;
+  padding-top:2vw;
+  font-size: 5vw;
 }
 
 .new_icon {
   position:absolute;
-  right:15px;top:15px;
+  right:15px; top:15px;
 }
 
 .new_icon span {
-  padding:5px;
+  padding:10px;
 }
+.new_icon span:hover {color:#0a1348;}

@@ -66,17 +66,20 @@ body {color:#0d0d0d; font-family: 'Noto Sans KR', sans-serif;
 .button .btn_login {background:var(--sub-color);}
 
 .wrap {padding:20px 16px; box-sizing: border-box;}
+.content {padding-bottom: 50px;}
 
 /* padding------margin--------- */
+.pt0 {padding-top:0px !important;}
+.pt05 {padding-top:5px !important;}
 
-.pd_t_5 {padding-top:5px;}
-
-.pd_b_5 {padding-bottom:5px;}
+.pb0 {padding-bottom:0px !important;}
+.pb05 {padding-bottom:5px !important;}
 
 /* ----------header----------------- */
 
 .header{
   height:50px;
+  border-bottom: 1px solid #d7dbe7;
 }
 
 h2 {
@@ -101,16 +104,46 @@ h2 {
 /* ----------header----------------- */
 
 
-h3{
+h3.m-title{
   font-size: 18px;
   padding-bottom: 20px;
 }
 
-h4 {
+h4{
  font-size: 16px;
 }
 
 small {
  font-size: 12px;
  display: block;
+}
+
+/*---------- 네비게이션-------- */
+.nav {
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  left:0; bottom:0;
+  z-index: 9999;
+  background: var(--main-color);
+}
+.nav a.nav-item {
+  display:block;
+  width: 20%; height:50px;
+  color:#fff;
+  float:left;
+  box-sizing: border-box;
+  padding-top:25px;
+ }
+
+ .nav a.nav-home {  background: var(--main-color) url(../images/icon/home.svg) no-repeat center 6px; background-size:20px;}
+ .nav a.nav-cart {  background: var(--main-color) url(../images/icon/cart.svg) no-repeat center 6px; background-size:20px;}
+.nav a.nav-book {  background: var(--main-color) url(../images/icon/book.svg) no-repeat center 6px; background-size:20px;}
+.nav a.nav-cal {  background: var(--main-color) url(../images/icon/calendar.svg) no-repeat center 6px; background-size:19px;}
+.nav a.nav-user {  background: var(--main-color) url(../images/icon/user.svg) no-repeat center 6px; background-size:19px;}
+
+a.nav-item span {
+  display: inline-block;
+  font-size: 12px;
+  padding-top:4px;
 }
