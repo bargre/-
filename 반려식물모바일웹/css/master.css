@@ -131,14 +131,13 @@ section {}
 
 /* 반려식물 리스트 */
 
-.myhome-myplant-list {
-  padding:0 0 25px 15px;
-}
-.myhome-myplant-list li{
+.myhome-myplant-list{ padding-left:15px; padding-right:15px; padding-bottom:25px;}
+.myhome-myplant-list ul li{
   border-radius: 50%;
   overflow: hidden;
   border:1px solid #ddd;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 /* 이미지 박스 영역 */
